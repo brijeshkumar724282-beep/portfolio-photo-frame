@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frame & Field | Photography Portfolio</title>
+<meta name="description" content="Portfolio template for photographers and visual artists. Warm gallery look, masonry works, lightbox viewing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="top">
+  <div class="navInner">
+    <a href="#top" class="brand">
+      <span class="brandMark" aria-hidden="true"></span>
+      <span class="brandText">Frame <em>&amp;</em> Field</span>
+    </a>
+    <nav class="links" id="navLinks" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#words">Kind Words</a>
+      <a href="#book" class="navCta">Book a Shoot</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="heroGrid">
+    <div class="heroCopy reveal">
+      <p class="eyebrow">Portfolio template for visual storytellers</p>
+      <h1>Work that feels like <span class="accentWord">warm light</span> on paper.</h1>
+      <p class="lede">A calm gallery frame for your best photographs. Masonry layout, fullscreen viewing, and a booking flow that turns admirers into clients.</p>
+      <div class="heroActions">
+        <a href="#work" class="btn solid">View the Gallery</a>
+        <a href="#book" class="btn ghost">Book a Session</a>
+      </div>
+      <div class="heroStats">
+        <div><strong>240+</strong><span>Shoots delivered</span></div>
+        <div><strong>12</strong><span>Awards and features</span></div>
+        <div><strong>9 yrs</strong><span>Behind the lens</span></div>
+      </div>
+    </div>
+
+    <div class="collage reveal" aria-label="Gallery collage preview">
+      <div class="tile t1 art-sun"><span class="tileLabel">Golden Hour, Big Sur</span><span class="tileDot"></span></div>
+      <div class="tile t2 art-studio"><span class="tileLabel">Studio Portrait 04</span></div>
+      <div class="tile t3 art-street"><span class="tileLabel">Street Series, Lisbon</span></div>
+      <div class="tile t4 art-dune"><span class="tileLabel">Dune Study II</span></div>
+      <div class="tile t5 art-flora"><span class="tileLabel">Flora and Form</span></div>
+      <div class="tileCard">
+        <p class="tileCardTop">Now booking</p>
+        <p class="tileCardMain">Autumn sessions open in two cities</p>
+        <a href="#book">Reserve a date</a>
+      </div>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <span>Weddings</span><i></i><span>Portraits</span><i></i><span>Editorial</span><i></i><span>Travel</span><i></i><span>Family</span><i></i><span>Brand</span><i></i>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="work">
+  <div class="sectionHead reveal">
+    <div>
+      <p class="eyebrow">Selected work</p>
+      <h2>A wall of favorite frames.</h2>
+      <p class="sub">Filter by mood, then open any piece fullscreen. Use arrow keys to wander through the wall.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter works">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="portrait">Portrait</button>
+      <button class="chip" data-filter="place">Place</button>
+      <button class="chip" data-filter="wedding">Wedding</button>
+    </div>
+  </div>
+
+  <div class="masonry" id="masonry">
+    <button class="card reveal" data-cat="portrait" data-title="Amber Study 01" data-meta="Portrait · Studio light" data-art="art-studio">
+      <span class="thumb art-studio"><span class="zoom">Open</span></span>
+      <span class="cardRow"><span class="cardTitle">Amber Study 01</span><span class="cardCat">Portrait</span></span>
+    </button>
+    <button class="card reveal" data-cat="place" data-title="Dune Study II" data-meta="Place · Desert at noon" data-art="art-dune">
+      <span class="thumb art-dune tall"><span class="zoom">Open</span></span>
+      <span class="cardRow"><span class="cardTitle">Dune Study II</span><span class="cardCat">Place</span></span>
+    </button>
+    <button class="card reveal" data-cat="wedding" data-title="Vows in the Orchard" data-meta="Wedding · Outdoor ceremony" data-art="art-orchard">
+      <span class="thumb art-orchard"><span class="zoom">Open</span></span>
+      <span class="cardRow"><span class="cardTitle">Vows in the Orchard</span><span class="cardCat">Wedding</span></span>
+    </button>
+    <button class="card reveal" data-cat="portrait" data-title="Studio Portrait 04" data-meta="Portrait · Softbox series" data-art="art-sun">
+      <span class="thumb art-sun tall"><span class="zoom">Open</span></span>
+      <span class="cardRow"><span class="cardTitle">Studio Portrait 04</span><span class="cardCat">Portrait</span></span>
+    </button>
+    <button class="card reveal" data-cat="place" data-title="Lisbon Corners" data-meta="Place · Street series" data-art="art-street">
+      <span class="thumb art-street"><span class="zoom">Open</span></span>
+      <span class="cardRow"><span class="cardTitle">Lisbon Corners</span><span class="cardCat">Place</span></span>
+    </button>
+    <button class="card reveal" data-cat="wedding" data-title="First Dance, Low Light" data-meta="Wedding · Reception" data-art="art-dance">
+      <span class="thumb art-dance tall"><span class="zoom">Open</span></span>
+      <span class="cardRow"><span class="cardTitle">First Dance, Low Light</span><span class="cardCat">Wedding</span></span>
+    </button>
+    <button class="card reveal" data-cat="portrait" data-title="Flora and Form" data-meta="Portrait · Editorial" data-art="art-flora">
+      <span class="thumb art-flora"><span class="zoom">Open</span></span>
+      <span class="cardRow"><span class="cardTitle">Flora and Form</span><span class="cardCat">Portrait</span></span>
+    </button>
+    <button class="card reveal" data-cat="place" data-title="Coastline at Rest" data-meta="Place · Big Sur" data-art="art-coast">
+      <span class="thumb art-coast"><span class="zoom">Open</span></span>
+      <span class="cardRow"><span class="cardTitle">Coastline at Rest</span><span class="cardCat">Place</span></span>
+    </button>
+  </div>
+  <p class="compareNote reveal">Before / after feel: open any frame, then drag the slider inside the lightbox to compare the edit.</p>
+</section>
+
+<!-- ABOUT + SERVICES -->
+<section class="section split" id="about">
+  <div class="aboutCard reveal">
+    <p class="eyebrow">About the artist</p>
+    <h2>Hello, I am June Ellis.</h2>
+    <p>I photograph people the way galleries hang paintings: with room to breathe. My studio mixes film softness with crisp digital detail, always in warm honest color.</p>
+    <ul class="aboutList">
+      <li><strong>Based in</strong> Portland, travels often</li>
+      <li><strong>Gear note</strong> Medium format plus 35mm film</li>
+      <li><strong>Turnaround</strong> Preview in 48 hours</li>
+    </ul>
+    <div class="sig">June Ellis <span>Photographer and print maker</span></div>
+  </div>
+  <div class="services" id="services">
+    <p class="eyebrow">Services and pricing</p>
+    <h2>Simple packages, gallery finish.</h2>
+    <div class="priceGrid">
+      <div class="price reveal">
+        <h3>Portrait Hour</h3>
+        <p class="amount">$240</p>
+        <p class="pdesc">One location, one outfit change, 20 edited frames.</p>
+        <a href="#book" data-plan="Portrait Hour">Choose Portrait</a>
+      </div>
+      <div class="price featured reveal">
+        <p class="flag">Most loved</p>
+        <h3>Full Story</h3>
+        <p class="amount">$680</p>
+        <p class="pdesc">Half day coverage, 80 edited frames, fine art print included.</p>
+        <a href="#book" data-plan="Full Story">Choose Full Story</a>
+      </div>
+      <div class="price reveal">
+        <h3>Wedding Day</h3>
+        <p class="amount">$1,900</p>
+        <p class="pdesc">Full day, two shooters, preview gallery plus heirloom album.</p>
+        <a href="#book" data-plan="Wedding Day">Choose Wedding</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section quotes" id="words">
+  <div class="quoteBox reveal">
+    <p class="eyebrow">Kind words</p>
+    <blockquote id="quoteText">June made the whole day feel easy. The photos look like how the light actually felt.</blockquote>
+    <p class="quoteName" id="quoteName">Maya and Tom · Wedding clients</p>
+    <div class="quoteDots" id="quoteDots" role="tablist" aria-label="Testimonials"></div>
+    <div class="quoteBtns">
+      <button id="quotePrev" aria-label="Previous testimonial">←</button>
+      <button id="quoteNext" aria-label="Next testimonial">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section book" id="book">
+  <div class="bookGrid">
+    <div class="reveal">
+      <p class="eyebrow">Booking</p>
+      <h2>Reserve your date.</h2>
+      <p class="sub">Tell me about your shoot. I reply within one business day with availability and a tailored quote.</p>
+      <ul class="contactList">
+        <li><strong>Studio</strong> 14 Alder Street, Portland</li>
+        <li><strong>Email</strong> hello@frameandfield.studio</li>
+        <li><strong>Hours</strong> Tue to Sat, 9am to 6pm</li>
+      </ul>
+    </div>
+    <form class="form reveal" id="bookForm" novalidate>
+      <div class="frow">
+        <label>Name<input type="text" name="name" id="fName" placeholder="Your full name" autocomplete="name"></label>
+        <label>Email<input type="email" name="email" id="fEmail" placeholder="you@example.com" autocomplete="email"></label>
+      </div>
+      <div class="frow">
+        <label>Session type
+          <select name="plan" id="fPlan">
+            <option>Portrait Hour</option>
+            <option selected>Full Story</option>
+            <option>Wedding Day</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Preferred date<input type="date" name="date" id="fDate"></label>
+      </div>
+      <label>Project details<textarea name="msg" id="fMsg" rows="4" placeholder="Location, vibe, headcount, must have shots..."></textarea></label>
+      <p class="err" id="formErr" role="alert" hidden></p>
+      <p class="ok" id="formOk" role="status" hidden></p>
+      <button type="submit" class="btn solid wide">Request Booking</button>
+      <p class="fine">No payment today. This only holds a conversation about your date.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footGrid">
+    <div>
+      <p class="brandText">Frame <em>&amp;</em> Field</p>
+      <p class="footNote">A warm gallery template for photographers. Replace the CSS art with your own images when ready.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#book">Booking</a>
+    </nav>
+    <p class="copy">© 2026 Frame and Field. Crafted with patience and warm light.</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Artwork viewer">
+  <div class="lbTop">
+    <div><p class="lbTitle" id="lbTitle">Artwork</p><p class="lbMeta" id="lbMeta"></p></div>
+    <button class="lbClose" id="lbClose" aria-label="Close viewer">×</button>
+  </div>
+  <div class="lbStage">
+    <button class="lbArrow left" id="lbPrev" aria-label="Previous artwork">←</button>
+    <div class="lbArtWrap">
+      <div class="lbArt" id="lbArt"></div>
+      <div class="lbAfter" id="lbAfter"></div>
+      <input type="range" class="lbSlider" id="lbSlider" min="0" max="100" value="50" aria-label="Compare before and after">
+      <span class="lbHandle" id="lbHandle" aria-hidden="true"></span>
+      <span class="lbTag b">Before</span><span class="lbTag a">After</span>
+    </div>
+    <button class="lbArrow right" id="lbNext" aria-label="Next artwork">→</button>
+  </div>
+  <p class="lbHint">Drag the slider to compare the edit · Esc to close · ← → to browse</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
